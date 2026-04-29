@@ -2,7 +2,7 @@ node {
     stage('Clone') {
         git branch: 'main', url: 'https://github.com/ritikavesit/SimpleJavaApp.git'
     }
-}
+
 
     stage('Build') {
         sh 'mvn clean compile'

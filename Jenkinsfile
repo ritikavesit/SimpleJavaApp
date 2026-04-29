@@ -5,15 +5,15 @@ node {
 
 
     stage('Build') {
-        sh 'mvn clean compile'
+        bat 'mvn clean compile'
     }
 
     stage('Test') {
-        sh 'mvn test'
+        bat 'mvn test'
     }
 
     stage('Package') {
-        sh 'mvn package'
+        bat 'mvn package'
     }
 
     stage('Deploy') {
